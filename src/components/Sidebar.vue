@@ -3,7 +3,7 @@
     <div class="formation">
       <router-link to="/dashbord">
         <a class="pages">
-          <i class="fa fa-tachometer icon ic"></i>
+          <i class="fa fa-tachometer icon  ic"></i>
           Dashbord
         </a>
       </router-link>
@@ -15,13 +15,13 @@
       </router-link>
       <router-link to="/charts">
         <a class="pages">
-          <i class="fa fa-area-chart  icon ic"></i>
+          <i class="fa fa-area-chart icon  ic"></i>
           Charts
         </a>
       </router-link>
       <router-link to="/tabs-panel">
         <a class="pages">
-          <i class="fa fa-tasks icon ic"></i>
+          <i class="fa fa-tasks icon  ic"></i>
           Tabs & Panels
         </a>
       </router-link>
@@ -39,7 +39,7 @@
       </router-link>
       <router-link to="/multilevel-dropdown">
         <a class="pages">
-          <i class="fa fa-dropbox icon ic"></i>
+          <i class="fa fa-dropbox  icon ic"></i>
           Multi-Level Dropdown<i class="fa fa-chevron-left si"></i>
         </a>
       </router-link>
@@ -82,6 +82,7 @@ export default {};
 .si {
   padding-left: 58px;
 }
+
 @media (max-width: 1164px) {
   .sidebar {
     left: 0;
@@ -92,6 +93,17 @@ export default {};
   .sidebar {
     left: -350px;
     transition: 0.8s;
+  }
+}
+@media (max-width: 1026px) {
+  .icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar {
+    padding-top: 90px;
   }
 }
 </style>

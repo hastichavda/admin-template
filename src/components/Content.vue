@@ -1,78 +1,78 @@
 <template>
   <div class="container">
     <div class="content">
-      <div class="toggle">
+      <!-- <div class="toggle">
         <i class="fa fa-caret-right circle c"></i>
-      </div>
+      </div> -->
       <router-view />
       <div class="row">
-        <div class="col-xl-2 col-md-3">
-          <Card>
-            <div slot="header">
+        <div class="col-xl-2 col-md-3 card-col1">
+          <Card class="row-card">
+            <div slot="header" class="card-h">
               <span class="fa-stack fa-3x">
                 <i class="fa fa-circle fa-stack-2x icon-background1"></i>
                 <i class="fa fa-eye fa-stack-1x"></i>
               </span>
             </div>
-            <div slot="body">
+            <div slot="body" class="card-b">
               <h1 class="card-font">8,457</h1>
             </div>
-            <div slot="footer">
+            <div slot="footer" class="card-f">
               <p class="card-p">Daily Visits</p>
             </div>
           </Card>
         </div>
-        <div class="col-xl-2 col-md-3">
-          <Card>
-            <div slot="header">
+        <div class="col-xl-2 col-md-3 card-col1">
+          <Card class="row-card">
+            <div slot="header" class="card-h">
               <span class="fa-stack fa-3x">
                 <i class="fa fa-circle fa-stack-2x icon-background2"></i>
                 <i class="fa fa-shopping-cart fa-stack-1x"></i>
               </span>
             </div>
-            <div slot="body">
+            <div slot="body" class="card-b">
               <h1 class="card-font">52,160</h1>
             </div>
-            <div slot="footer">
+            <div slot="footer" class="card-f">
               <p class="card-p">Sales</p>
             </div>
           </Card>
         </div>
-        <div class="col-xl-2 col-md-3">
-          <Card>
-            <div slot="header">
+        <div class="col-xl-2 col-md-3 card-col1">
+          <Card class="row-card">
+            <div slot="header" class="card-h">
               <span class="fa-stack fa-3x">
                 <i class="fa fa-circle fa-stack-2x icon-background3"></i>
                 <i class="fa fa-comments fa-stack-1x"></i>
               </span>
             </div>
-            <div slot="body">
+            <div slot="body" class="card-b">
               <h1 class="card-font">15,823</h1>
             </div>
-            <div slot="footer">
+            <div slot="footer" class="card-f">
               <p class="card-p">Comments</p>
             </div>
           </Card>
         </div>
-        <div class="col-xl-5 col-md-3">
-          <Card>
-            <div slot="header">
+        <div class="col-xl-5 col-md-3 card-col1">
+          <Card class="row-card">
+            <div slot="header" class="card-h">
               <span class="fa-stack fa-3x">
                 <i class="fa fa-circle fa-stack-2x icon-background4"></i>
                 <i class="fa fa-users fa-stack-1x"></i>
               </span>
             </div>
-            <div slot="body">
+            <div slot="body" class="card-b">
               <h1 class="card-font">36,752</h1>
             </div>
-            <div slot="footer">
+            <div slot="footer" class="card-f">
               <p class="card-p">No, of Visits</p>
             </div>
           </Card>
         </div>
       </div>
-      <div class="row card-chart">
-        <div class="col-xl-9 col-md-5">
+      <div class="row card-chart ">
+        <div class="col-xl-9 col-md-5 chart-col1">
           <Card>
             <div slot="header">
               <p class="card-chart-p">Area Chart</p>
@@ -94,7 +94,7 @@
             </div>
           </Card>
         </div>
-        <div class="col-xl-3 col-md-7">
+        <div class="col-xl-3 col-md-7 ">
           <Card>
             <div slot="header">
               <p class="card-chart-p">Line Chart</p>
@@ -141,6 +141,21 @@ body {
 .content {
   position: relative;
 }
+/* .circle {
+  height: 25px;
+  width: 30px;
+  border-radius: 0 90px 90px 0;
+  background: #d1cfcb;
+}
+.toggle {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.toggle .c {
+  padding: 5px;
+  font-size: 15px;
+  color: black;
+} */
 .cards {
   display: flex;
   position: absolute;
@@ -176,29 +191,33 @@ body {
   font-weight: bold;
   padding: 5px 5px 5px 10px;
 }
-.circle {
-  height: 25px;
-  width: 30px;
-  border-radius: 0 90px 90px 0;
-  background: #d1cfcb;
+
+.chart-col1 {
+  margin-bottom: 20px;
 }
-.toggle {
-  position: fixed;
-  left: 18%;
+.card-h {
+  padding: 5px 0 5px 10px;
 }
-.toggle .c {
-  padding: 5px;
-  font-size: 15px;
-  color: black;
+.card-b {
+  padding: 0 0 5px 15px;
 }
+.card-f {
+  padding: 5px 0 10px 15px;
+}
+.card-col1 {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1450px) {
   .content {
     width: 100%;
     margin-top: 10%;
   }
-  .toggle {
-  position: fixed;
-  left: 0%;
-}
+  .row-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>
