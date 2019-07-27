@@ -2,12 +2,18 @@
   <div class="container">
     <div class="row">
       <h1>EmptyPage</h1>
+      <Modal />
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import Modal from '../components/Modal'
+export default {
+  components: {
+    Modal
+  }
+};
 </script>
 
 <style></style>

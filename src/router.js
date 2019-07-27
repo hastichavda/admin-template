@@ -13,10 +13,10 @@ Vue.use(VueRouter);
 export default new VueRouter({
   routes: [
     {
-      path: "/dashbord",
+      path: "/",
       component: Dashbord
     },
-    { 
+    {
       path: "/uielement",
       component: UI_Element
     },
@@ -36,7 +36,7 @@ export default new VueRouter({
       path: "/forms",
       component: Forms
     },
-    { 
+    {
       path: "/multilevel-dropdown",
       component: Multidrop
     },

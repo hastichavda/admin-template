@@ -1,7 +1,7 @@
 <template>
   <div class="sidebar">
     <div class="formation">
-      <router-link to="/dashbord">
+      <router-link to="/">
         <a class="pages">
           <i class="fa fa-tachometer icon  ic"></i>
           Dashbord
@@ -49,12 +49,18 @@
           Empty Page
         </a>
       </router-link>
+      <Modal />
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import Modal from "../components/Modal";
+export default {
+  component: {
+    Modal
+  }
+};
 </script>
 
 <style>
