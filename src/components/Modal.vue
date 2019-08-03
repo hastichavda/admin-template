@@ -14,9 +14,6 @@
         <button @click="showModal()" class="btn btn-primary">
           Close
         </button>
-        <button @click="showModal()" class="btn btn-danger">
-          Delete
-        </button>
       </div>
     </div>
   </div>

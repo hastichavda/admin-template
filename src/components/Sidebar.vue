@@ -49,12 +49,6 @@
           Empty Page
         </a>
       </router-link>
-      <router-link to="/modal">
-        <a class="pages">
-          <i class="fa fa-square icon ic"></i>
-          Modal
-        </a>
-      </router-link>
     </div>
   </div>
 </template>
