@@ -18,7 +18,7 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a tabindex="1" href="#">Link 1</a>
+        <a href="#">Link 1</a>
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
       </div>
@@ -45,20 +45,8 @@
         <a href="#">Link 3</a>
       </div>
     </div>
-    <div class="dropdown">
-    
-      <Modal />
-    </div>
   </div>
 </template>
-<script>
-import Modal from "../components/Modal.vue";
-export default {
-  component: {
-    Modal
-  }
-};
-</script>
 
 <style>
 body {
@@ -80,7 +68,10 @@ body {
   padding: 14px 16px;
   text-decoration: none;
 }
-
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
 .dropdown {
   float: right;
 }

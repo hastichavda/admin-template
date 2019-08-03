@@ -8,6 +8,7 @@ import Restab from "./views/ResTab.vue";
 import Forms from "./views/Forms.vue";
 import Multidrop from "./views/Multidrop.vue";
 import Emptypage from "./views/Emptypage.vue";
+import Modal from "./views/Modal.vue";
 
 Vue.use(VueRouter);
 export default new VueRouter({
@@ -43,6 +44,10 @@ export default new VueRouter({
     {
       path: "/empty-page",
       component: Emptypage
+    },
+    {
+      path: "/modal",
+      component: Modal
     }
   ]
 });

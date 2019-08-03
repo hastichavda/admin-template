@@ -11,8 +11,11 @@
         <h4>Hello</h4>
       </div>
       <div class="modal-footer">
-        <button @click="showModal()" class="btn btn-success">
+        <button @click="showModal()" class="btn btn-primary">
           Close
+        </button>
+        <button @click="showModal()" class="btn btn-danger">
+          Delete
         </button>
       </div>
     </div>
@@ -23,7 +26,7 @@
 export default {
   data() {
     return {
-      Modal: true
+      Modal: false
     };
   },
   methods: {

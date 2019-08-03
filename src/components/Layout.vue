@@ -1,10 +1,9 @@
 <template>
-<div>
-  <Sidebar/>
-    <Header/>
-
-    <Content  class="content-padd"/>
-</div>  
+  <div>
+    <Sidebar />
+    <Header />
+    <Content class="content-padd"/>
+  </div>
 </template>
 
 <script>

@@ -49,19 +49,15 @@
           Empty Page
         </a>
       </router-link>
-      <Modal />
+      <router-link to="/modal">
+        <a class="pages">
+          <i class="fa fa-square icon ic"></i>
+          Modal
+        </a>
+      </router-link>
     </div>
   </div>
 </template>
-
-<script>
-import Modal from "../components/Modal";
-export default {
-  component: {
-    Modal
-  }
-};
-</script>
 
 <style>
 .sidebar {

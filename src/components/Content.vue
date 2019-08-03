@@ -1,9 +1,6 @@
 <template>
   <div class="container">
     <div class="content">
-      <!-- <div class="toggle">
-        <i class="fa fa-caret-right circle c"></i>
-      </div> -->
       <router-view />
       <div class="row">
         <div class="col-xl-2 col-md-3 card-col1">
