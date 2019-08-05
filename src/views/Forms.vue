@@ -76,7 +76,9 @@
               id="ConfirmPassword"
               name="ConfirmPassword"
               class="form-control"
-              :class="{'is-invalid': submitted && $v.user.ConfirmPassword.$error }"
+              :class="{
+                'is-invalid': submitted && $v.user.ConfirmPassword.$error
+              }"
               placeholder="Confirm Password"
             />
             <div
