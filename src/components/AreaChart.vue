@@ -51,7 +51,7 @@ export default {
   beforeDestroy() {
     this.myBarChart.destroy();
   }
-}
+};
 </script>
 
 <style scoped>

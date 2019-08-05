@@ -28,14 +28,11 @@ export default {
   },
   methods: {
     showModal() {
-    if (this.Modal == false)
-    {
-    this.Modal = true;
-    }
-    else
-    {
-    this.Modal = false;
-    }
+      if (this.Modal == false) {
+        this.Modal = true;
+      } else {
+        this.Modal = false;
+      }
     }
   }
 };

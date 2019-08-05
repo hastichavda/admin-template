@@ -138,21 +138,6 @@ body {
 .content {
   position: relative;
 }
-/* .circle {
-  height: 25px;
-  width: 30px;
-  border-radius: 0 90px 90px 0;
-  background: #d1cfcb;
-}
-.toggle {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.toggle .c {
-  padding: 5px;
-  font-size: 15px;
-  color: black;
-} */
 .cards {
   display: flex;
   position: absolute;

@@ -58,15 +58,14 @@ export default {
       type: "line",
       data: data,
       options: options
-    })
+    });
   },
   beforeDestroy() {
     this.myLineChart.destroy();
   }
 };
 </script>
-
-<style scoped>
+<style>
 .graph-container {
   height: 300px;
 }

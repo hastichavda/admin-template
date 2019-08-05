@@ -2,7 +2,7 @@
   <div>
     <Sidebar />
     <Header />
-    <Content class="content-padd"/>
+    <Content class="content-padd" />
   </div>
 </template>
 
@@ -21,11 +21,10 @@ export default {
 </script>
 
 <style>
-.content-padd{
-  padding-top:5%;
-  padding-left:50px;
-  margin-left:18%;
-  height:100%;
- 
+.content-padd {
+  padding-top: 5%;
+  padding-left: 50px;
+  margin-left: 18%;
+  height: 100%;
 }
 </style>

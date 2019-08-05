@@ -52,14 +52,12 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .navbar {
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   width: 100%;
   z-index: 1;
 }
-
 .navbar a {
   float: right;
   font-size: 16px;
