@@ -1,125 +1,110 @@
 <template>
-  <div class="navbar">
-    <h2 class="logo"><i class="fa fa-cog set s-i"></i>HYBRID</h2>
-    <div class="dropdown">
-      <button class="dropbtn">
-        <i class="fa fa-user i1 i-i"></i>
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-expanded="false"
+          aria-controls="navbar"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand " href="#">
+          <h4 class="title"><i class="fa fa-cog"></i>HYBRID</h4>
+        </a>
+      </div>
+      <div id="navbar" class="navbar-right navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#">
+              <dropdown icon="fa fa-envelope menu">
+                <ul class="dropdown-content">
+                  <li>link 1</li>
+                  <li>link 2</li>
+                  <li>link 3</li>
+                </ul>
+              </dropdown>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <dropdown icon="fa fa-bars menu">
+                <ul class="dropdown-content">
+                  <li>link 1</li>
+                  <li>link 2</li>
+                  <li>link 3</li>
+                </ul>
+              </dropdown>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <dropdown icon="fa fa-bell menu">
+                <ul class="dropdown-content">
+                  <li>link 1</li>
+                  <li>link 2</li>
+                  <li>link 3</li>
+                </ul>
+              </dropdown>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <dropdown icon="fa fa-user menu">
+                <ul class="dropdown-content">
+                  <li>link 1</li>
+                  <li>link 2</li>
+                  <li>link 3</li>
+                </ul>
+              </dropdown>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">
-        <i class="fa fa-bell i1 i-i"></i>
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">
-        <i class="fa fa-bars i1 i-i"></i>
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">
-        <i class="fa fa-envelope i1 i-i"></i>
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-  </div>
+  </nav>
 </template>
 
+<script>
+import dropdown from "./Drop";
+export default {
+  components: {
+    dropdown
+  }
+};
+</script>
+
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 .navbar {
   background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-.navbar a {
-  float: right;
-  font-size: 16px;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
-.navbar-toggle {
-  padding: 10px;
-  margin: 25px 15px 25px 0;
-}
-.dropdown {
-  float: right;
-}
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
+.title {
   color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+  font-size: 20px;
+  margin: 0 0 10px 0;
 }
-.navbar a:hover,.dropdown:hover .dropbtn {
-  background-color: gray;
+.menu {
+  color: white;
 }
 .dropdown-content {
-  display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  color: black;
   z-index: 20;
   opacity: 0.8;
-}
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.logo {
-  float: left;
-  color: white;
-}
-.s-i {
   padding: 5px;
 }
-.i-i {
-  padding: 5px;
+ul li {
+  list-style: none;
 }
-.button-modal {
-  padding-top: 15px;
+ul li {
+  list-style: none;
 }
 </style>

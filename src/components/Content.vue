@@ -193,7 +193,6 @@ body {
 @media (max-width: 1450px) {
   .content {
     width: 100%;
-    margin-top: 10%;
   }
   .row-card {
     display: flex;
